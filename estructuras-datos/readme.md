@@ -128,3 +128,73 @@ La encriptación se hacen con sofisticadas fórmulas matemáticas
 
 
 Para este ejemplo [criptografia.py](criptografia.py) se ha utilizado un diccionario para darle valor a los caracteres, y de esta manera tomar cada uno y asignarle el valor para que no pueda ser legible. Las funciones cypher crifra el mensaje accediendo al key del diccionario y asignandole el nuevo valor al mensaje cifrado. En el caso de decifrado, hacemos lo contrario. Iteramos sobre todo el diccionario para encontrar el valor y si es el mismo, le damos la llave para decifrar el mensaje.
+
+## Tuplas en python
+
+* Las tuplas con una secuencia de valores indexados por enteros (integers)
+* Similar a las lisas con la gran diferencua de que son __inmutables__
+* Las tuplas se crean separando los valores con comas
+    - Es práctica común encerrar los valores con paréntesis
+* Se pueden utilizar para devolver más de un valor en una función o crear estructuras de datos ligeras
+* Al igual que los strings si se quier modificar una tupla es necesario crear una nueva
+
+```python
+mi_tupla_ = 1 , 2 , 3 , 4
+mi_tupla_ =  (1 ,2 ,3 ,4)
+```
+
+Encontrar el primer caracter que no se repita en un string
+
+
+## Uso de sets en python
+
+Los conjuntos (sets) son similares a las listas, y no permiten elementos repetidos.
+
+Los sets, funcionan igual que la teoría de conjuntos en matemáticas
+
+Las keyword utilizados son:
+- **union** Une los valores de los dos conjuntos
+- **intersection** Muestra sólo los elementos que se repiten en los dos conjuntos
+- **difference** Muestra los elementos que no son están definido en alguno de los elementos, que no se repiten
+
+```python
+s = set([1,2,3])
+t = set([3,4,5])
+
+s.union(t) # Une los elementos de ambos conjuntos
+s.intersection(t) #Nos regresa el único valor en la intersección de los conjuntos
+s.diference(t) # Muestra los elementos de s, que no están en t
+
+1 in s #True
+1 in t #False
+1 not in s #False
+```
+
+Es mucho más eficiente hacer operaciones con conjuntos, que con listas
+
+
+## List comprehensions y Dictionary comprehensions
+
+* Python permite crear e inicializar listas y diccionarios con una sintaxis más natural
+* Convierte una secuencia en otra
+
+Los que hace **list comprehension** es convertir una lista existente en una nueva lista
+
+*Syntactic Sugar*
+```python
+pares = [num for in range(100) if num%2 == 0]
+nones = [x for in range(100) if x%2 != 0]
+cuadrados = { x: x**2 for x in range(100) }
+```
+
+Los que nos permite esto, es hacer más sencillo de leer el código ahorrandonos líneas de código
+
+Por ejemplo, al utilizar dictionary comprehensions
+```python
+cuadrados = {}
+for num in range(1,11):
+    cuadrados[num] = num**1
+
+# Sugar syntactic for this
+squares = { num: num**2 for num in range(1, 11)  }
+```
