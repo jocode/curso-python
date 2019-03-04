@@ -73,12 +73,25 @@ IMAGES = ['''
 WORDS = [
     'lavadora',
     'secadora',
-    'sofa',
     'computador',
     'telefono',
     'equipo',
     'tablet',
-    'audifono'
+    'audifono',
+    'nevera',
+    'licuadora',
+    'plancha',
+    'sanduchera',
+    'tostadora',
+    'cafetera',
+    'microondas',
+    'televisor',
+    'aspiradora',
+    'ventilador',
+    'celular',
+    'exprimidor',
+    'batidora',
+    'portatil'
 ]
 
 def run():
