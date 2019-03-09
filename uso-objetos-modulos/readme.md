@@ -1,4 +1,4 @@
-# Uso d objetos y módulos
+# Uso de objetos y módulos
 
 ## Manejo de errores
 

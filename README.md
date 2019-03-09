@@ -154,42 +154,63 @@ Un condicinal puede tener condiciones anidadas dentro de cada una.
 
 ## Para ver el Zen de python
 
-Para mostrar los consejos que se tienen para escribir bueno programas, lo podemos mostrar al colocar en la terminal de python `import this`. Con esta líena nos mostrará la filosofía que se debería seguir para construir un software excelente. Lo que dice el lo siguiente:
+Para mostrar los consejos que se tienen para escribir bueno programas, lo podemos mostrar al colocar en la terminal de python `import this`. 
 
->Beautiful is better than ugly.
 
->Explicit is better than implicit.
+## Estructura de datos
 
->Simple is better than complex.
+### Listas
 
->Complex is better than complicated.
+* Una lista es una secuencia de elementos
+* Cuando se asigna a una variable, permite agrupar varios elementos en un sólo lugar
+* Se crar con corchetes **[]** on con la keyword **list**
+* Las listas son mutables
 
->Flat is better than nested.
+```python
+supermercado = ['apio', 'tomate', 'queso']
+otraLista = list() # Crea una lista vacía
+# Se accede mediante el indice
+supermercado[0]
 
->Sparse is better than dense.
+# el método append agrega un elemento a la lista
+otraLista.append('Esteban')
+# Eliminar un elemento dado un valor
+otraLista.remove('apio')
+```
 
->Readability counts.
 
->Special cases aren't special enough to break the rules.
+### Diccionarios en pyhton
 
->Although practicality beats purity.
+Un diccionario es como una generalización de una lista
+* Un diccionario es un mapa de llaves y valores. Los valores pueden ser de cualquier tipo
+* Se crea con llaves {} o con el  keyword **dict**
 
->Errors should never pass silently.
+Por ejemplo
+```python
+mi_other_dict = dict()
+mi_dict = {}
+mi_dict['clave'] = 'valor'
+```
 
->Unless explicitly silenced.
+También se pueden añadir valores al momento de inicializarlo
+```python
+mi_dict = {'clave': 'valor'}
+```
 
->In the face of ambiguity, refuse the temptation to guess.
+Para ver más información sobre esto, ver el archivo [Estructuras de Datos
+](estructuras-datos.py)
 
->There should be one-- and preferably only one --obvious way to do it.
 
->Although that way may not be obvious at first unless you're Dutch.
+**Para más información sobre el lenguage ver los archivos**
 
->Now is better than never.
+* [Uso de strings y Ciclos](string-y-ciclos/readme.md)
 
->Although never is often better than right now.
+* [Estructuras de Datos](estructuras-datos/readme.md)
 
->If the implementation is hard to explain, it's a bad idea.
+* [Uso de objetos y módulos](uso-objetos-modulos/readme.md)
 
->If the implementation is easy to explain, it may be a good idea.
+* [Why python?](complementos/readme.md)
 
->Namespaces are one honking great idea -- let's do more of those!
+* [Python en Servidor web](aplicacion-web/readme.md)
+
+* [Sitio web con Python](website/readme.md)

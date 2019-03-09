@@ -95,3 +95,5 @@ Enlazamos el proyecto
 * `heroku git:remote first-website-python` Enlazamos el proyecto
 
 * `git push heroku master` Enviamos los archivos al repositorio remoto
+
+* `heroku open` Abre la aplicacion en el navegadors
