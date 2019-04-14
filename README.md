@@ -214,3 +214,12 @@ Para ver más información sobre esto, ver el archivo [Estructuras de Datos
 * [Python en Servidor web](aplicacion-web/readme.md)
 
 * [Sitio web con Python](website/readme.md)
+
+
+## Envío de Emails con Python 
+
+Para enviar correos electrónicos con python mediante gmail, debemos habilitar la opción de **Acceso de apps menos seguras** en la configuración de la cuenta en *seguridad->Acceso de apps menos seguras->Permitir el acceso de aplicaciones menos seguras (ON)*, de esta forma la aplicación en python podrá enviar correos a través de la cuenta.
+
+Python ya cuenta con una librería para el envío de correos, y se llama **smtplib**, los correos se enviarán medianteel protocolo **SMTP** (Simple Mail Transfer Protocol)
+
+- Librería **python-decouple**, permite hacer uso de variables de entornos
