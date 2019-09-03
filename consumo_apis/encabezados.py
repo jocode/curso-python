@@ -22,4 +22,4 @@ if __name__ == '__main__':
 		#print(response.content)
 		headers_response = response.headers # Dic
 		server = headers_response['Server']
-		print(server)
+		print(headers_response)
