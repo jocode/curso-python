@@ -42,7 +42,7 @@ Primero preparamos el entorno virtual, esto nos permitirá separar nuestro proye
 
 Instalamos el modulo de entorno virtual, luego ejcutamos el comando
 
-* `python -m venv venv`
+* `python3 -m venv venv`
 
 Luego nos dirigimos a la carpeta *venv/bin/* e instalamos flask
 
